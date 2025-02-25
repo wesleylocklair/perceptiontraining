@@ -1,7 +1,9 @@
 body{
+            background-image: url(./images/citysimplesteampunk.webp);
+
     background-color:rgb(150, 120, 85);
     text-decoration: none;
-    color:white;
+    color:silver;
     margin:0;
     z-index: 0;
     font-family: "Nanum Myeongjo", serif;
@@ -29,6 +31,11 @@ a:hover{
     border-color: black;
 }
 
+/* main{
+    /* background-image: url(./images/citysimplesteampunk.webp); 
+
+} */
+
 article{
     margin-top: 5%;
     margin-left: 15%;
@@ -36,10 +43,10 @@ article{
     border-radius: 20px;
     border-style: solid;
     border-width: 3px;
-    border-color:rgba(0, 0, 0, 0.5);
+    border-color:rgba(0, 0, 0, 0.8);
     z-index: 2;
     overflow:auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding:1%;
 
 }
@@ -57,7 +64,7 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: silver;
     text-align: center;
 }
 
@@ -102,7 +109,7 @@ width:15%;
     width:20%;
     border-radius:20px;
     border-style:solid;
-    border-color:  rgba(0, 0, 0, 0.5);
+    border-color:  rgba(0, 0, 0, 0.8);
 }
 #articlepic2{
     margin-right:1%;
@@ -112,11 +119,11 @@ width:15%;
     width:20%;
     border-radius:20px;
     border-style:solid;
-    border-color:  rgba(0, 0, 0, 0.5);
+    border-color:  rgba(0, 0, 0, 0.8);
 }
 .articlelink{
   text-align: right;
-  color: white;
+  color: silver;
   margin-top:5%;
   padding:1%;
   border-radius: 20px;
@@ -141,4 +148,17 @@ height:15%;
 width:15%;
 margin-left: -5%;
 margin-bottom: -20%;
+}
+
+@keyframes slideInFromLeft {
+
+    0% { transform: translateX(-100%); opacity: 0; }
+
+    100% { transform: translateX(0); opacity: 1; }
+
+}
+.appear {
+
+    animation: slideInFromLeft 1s ease-in-out;
+
 }
